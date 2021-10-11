@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+    <style type="text/css">
+        
+        body {
+background: rgb(65, 136, 37);
+}
+        .btn{
+height:76px;
+width:76px;
+background:rgba(126, 25, 25, 0.746);
+color: green;
+
+font-size:23px;
+        
+        
+}
+
+      .card:hover{
+        text-align: center;
+        transition:3s;
+box-shadow:5px  7px 8px 10px solid blue;
+      } 
+       .btn{
+           border-color:  rgb(0, 139, 0);
+       } 
+  .btn:hover{
+        background:#1de70a;
+        transition:1s;
+        color: blue;
+         }
+
+#caltext{
+    text-align: center;
+    border-radius: 455px;
+    background-color: rgb(39, 33, 38);
+    font-size: x-large;
+    font-family: cursive;
+    color: rgb(43, 86, 226);
+    padding: 17px;
+    animation-name: text-animation;
+    animation-duration:  0.7s;
+    animation-iteration-count: 12;
+    }
+    @keyframes text-animation {
+    from{
+font-size: 12px;
+    color: rgb(62, 228, 21);
+    }
+    to{
+        font-size: 24px;
+    color: rgb(0, 26, 255);
+    }
+    }
+    #cal-hov:hover{
+        background-color:rgb(5, 49, 46);
+        padding: 12px;
+        border-radius: 12px;
+        width: 345px;
+        margin: 20px;
+        transition: 3s;
+    }
+    #display{
+        border-bottom: none;
+    border: 2px solid blue;
+    width:314px; height:78px;
+     font-size:24px; color:rgb(37, 37, 42);   
+       background-color: cornflowerblue;
+    }
+    .btn-3{
+        background: indigo;
+    }
+    .btn-4{
+        background-color: rgb(236, 221, 13);
+    }
+  
+    </style> 
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css"/>
+        <title>JavaScript learning Prove  </title>
+    </head>
+    <body>
+      <h2 id="caltext">
+        Calculator BY JavaScript 
+    </h2>
+   <center>
+<br><br>
+<form name="calculator" id="cal-hov">
+    <br>
+        <input type="text" placeholder="Subrota Chandra" id="display">
+           <div class="card">
+       <div>
+        <input type="button"  class="btn" value="1" onClick="  calculator.display.value+='1'    "/>
+       <input type="button"  class="btn" value="2" onClick="  calculator   .display.value +='2'     "/>
+            <input type="button"  class="btn" value="3"onClick="  calculator   .display.value +='3'     "/>
+            <input type="button"  class="btn btn-3" value="+" onClick=" calculator.display.value +='+'  " />
+       </div>
+    
+        <div>
+        <input type="button"  class="btn" value="4" onClick=" calculator .display.value +='4'    "  />
+            <input type="button"  class="btn" value="5"  onClick=" calculator .display.value +='5'    "  />
+            <input type="button"  class="btn" value="6" onClick ="  calculator.display.value +='6'    "/>
+            <input type="button"  class="btn btn-3"  value="--" onClick="calculator.display.value  +='-'  "/>
+       </div>
+        
+        
+        <div>
+        <input type="button"  class="btn" value="7"    onClick=" calculator .display.value +='7'    "  />
+            <input type="button"  class="btn" value ="8"      onClick=" calculator.display.value +='8'    "    />
+            <input type="button"  class="btn" value="9"      onClick=" calculator.display.value +='9'    "/>
+            <input type="button" class="btn btn-3" value="X"    onClick=" calculator.display.value +='*'    ">
+       </div>
+      
+        <div>
+        <input type="button"  class="btn"  value="0" onClick=" calculator.display.value +='0'  "/>
+            <input type="button"  class="btn btn-4" value="DEL"  onClick=" calculator.display.value   =  calculator.display.value .slice(0 , -1)  ">
+            <input type="button"  class="btn btn-3"  value ='.'  onClick=" calculator.display.value +='.'    "/>
+            <input type="button" class="btn btn-3" value="/" onClick=" calculator.display.value +='/'    "/>            
+          <div>
+            
+      <input type="button"  class="btn btn-4"  value="CLR"  onClick=" calculator.display.value =  ''    ">
+            <input type="button"  class="btn btn-4" value="%" onClick=" calculator.display.value +='%'    ">
+            <input type="button"  class="btn btn-3"  value='^'  onClick=" calculator.display.value +='^'    ">
+            <input type="button" class="btn btn-3" value="="  onClick=" calculator.display.value  = eval(calculator.display.value ) ">            
+          <div>
+        </p>
+        </center>
+        </div>
+             </form> 
+             <br><br>
+       </body>
+</html>

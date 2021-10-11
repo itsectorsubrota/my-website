@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    }
+    #body{
+    background-color: aquamarine;
+    padding: 12px;
+    
+    }
+    /*------------------------
+    image start 
+    --------------------------*/
+    .image{
+    color: lime;
+    font-family: sans-serif;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    width: 60%;
+    }
+    #image{
+    border-radius: 60%;
+    height: 147px;
+    width: 158px;
+    border: 2px solid green;
+    float: left;
+    }
+    /*------------------------
+    image ends
+    --------------------------*/
+    
+    /*header content style start*/
+   .content-right{
+       font-size: large;
+       color: darkslateblue;
+       font-family: cursive;
+       text-decoration: none;
+       float: right;
+       width:auto;
+   }
+.head-text{
+padding: 17px;
+margin: 12px;
+float: left;
+}
+    .content-right a{
+     text-decoration: none;
+     transition: 1s;
+    }
+  .content-right a:hover{
+      color: green;
+      transition: 1s;
+  }
+    /*div clear strat*/
+    .div-clear{
+    clear: both;
+    }
+    /*header content style ends*/
+    /*div clear ends*/
+    /*------------------------
+    personl section start 
+    --------------------------*/
+    #personal-section{
+    margin: 10px;
+    }
+    .content{
+    color: darkblue;
+    padding: 0px;
+    margin: 15px;
+    padding-bottom: 7px;
+    }
+    .left-div{
+    width: 30%;
+    float: left;
+    }
+    .right-div{
+    width: 70%;
+    float: left;
+    }
+    .reference{
+        color: green;
+        font-size: large;
+        font-family: serif;
+        margin-bottom: 10px;
+    }
+    .common-hr{
+    width: 100%;
+    border-top: none;
+    border: 2px solid darkslategray;
+    margin: 20px;
+    }
+    .add-left{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: x-large;
+    font-family: cursive;
+    color:red;
+    
+    }
+    .add-right{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: x-large;
+    font-family: cursive;
+    color: deeppink;
+    
+    }
+    
+    
+    /*------------------------
+    personl section ends 
+    --------------------------*/
+    
+    
+    /*------------------------
+    social media start 
+    --------------------------*/
+    
+    .social{
+    background-color: black;
+    width:auto;
+    height:122px;;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    }
+    .social .social-content ul li{
+        float: right;
+        text-align: center;
+    }
+    .social-content ul li{
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    margin: 21px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    text-align: center;
+    
+    }
+    .div-text{
+        font-size: large;
+        word-break: keep-all;
+        word-spacing: 5px;
+        color: darkblue;
+        margin: 7px;
+        padding: 7px;
+        
+    }
+    /*------------------------
+    social media ends 
+    --------------------------*/

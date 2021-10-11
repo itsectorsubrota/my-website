@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #text{
+          box-sizing: border-box;
+          padding: 10px 10px;
+          border-left: none;
+          border-right: none;
+          border-top: none;
+          border-bottom: 4px solid green;
+          border-radius: 5px;
+          width: 500px;
+          background-color: darkcyan;
+          color: rgb(206, 209, 17);
+          font-size: large;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #text:focus{
+            width: 600px;
+            transition-duration: 1s;
+        }
+  #form{  
+      padding: 10px;
+      width: 800px;
+      margin: 20px;
+      color: rgb(139, 0, 86);
+      font-size: large;
+      font-family: monospace;
+      text-transform: uppercase;
+  }
+  .send{
+      border: 2px solid greenyellow;
+      background-color: magenta;
+      padding: 10px;
+      border-radius: 6px;
+      width: 100px;
+      margin: 5px;
+      font-size: large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .send:hover{
+      width: 142px;
+      transition-duration: 1s;
+      color: rgb(23, 0, 128);
+       background-color: green;
+  }
+  body{
+      background-color: darkcyan;
+  }
+#text-content{
+    width: 545px;
+    color: rgb(240, 243, 240);
+    font-size: large;
+    background-color: black;
+
+}
+#text-content:hover{
+    transition: 2s;
+   transform: scale(0.8);
+}
+    </style>
+<head>
+     <!--Fontawosome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form by css and html</title>
+</head>
+<body>
+    <br>
+
+    <center>
+        <form action="mailto:itsectorcommunication@gmail.com" enctype="text/plain" id="form">
+            <br>
+            <p class="far fa-user fa-3x " style="color: rgb(225, 233, 221);">  </p>
+<h2>contact me</h2>
+            <br>
+         <label for="first name">   First Name :  </label>
+         <br>
+         <input type="text" class="firstName" id="text"  placeholder="Enter your first  name" required/>
+<br><br>
+         <label for="last name">Last Name:</label>
+         <br>
+<input type="text" class="lastName"  id="text"   placeholder="Enter your last name" required/>
+<br><br>
+<label for="email">Email:</label>
+<br>
+<input type="email" class="email"  id="text"  placeholder="Enter your valid email" required/>
+<br><br>
+<label for="textfield">Text Field : </label>
+<br>
+
+<textarea  id="text-content" rows="6" placeholder="Type your message here"></textarea>
+<br><br>
+<input type="submit" value="Send" id="click" class="send" />
+<input type="reset" value="Clear" class="send"/>
+<br>
+<p style="color: green;"> &copy;  Copy write by Subrota Chandra Sharker .</p>
+<br>  
+</form>
+     <script src="msg.js"></script>
+</body>
+</html>

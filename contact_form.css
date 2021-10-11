@@ -1,0 +1,70 @@
+/*body  starts */
+#bd{
+background-attachment: fixed;
+background-size: cover;
+background-image: url("picture/programing.jpg");
+padding: 12px;
+font-size: x-large;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: green;
+}
+/*body  ends */
+/*form  starts */
+#form{
+background-color: rgba(16, 93, 20, 0.472);
+font-size: x-large;
+font-family: cursive;
+color: rgb(4, 11, 73);
+padding: 34px;
+border-radius: 12px;
+}
+#border{
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: 5px solid rgb(11, 37, 5);
+background-color: none;
+}
+input:focus{
+width: 410px;
+border:2px solid rgba(0, 128, 0, 0.829);
+transition-duration: 1s;
+}
+
+#check{
+height: 36px;
+width: 40px;
+border: 3px  solid blue ;
+background-color: chartreuse;
+}
+#text{
+background-color: rgb(14, 216, 199);
+font-size: x-large;
+font-family: cursive;
+color: rgb(76, 43, 226);
+padding: 37px;
+
+}
+/*form caption ends */
+
+/*form caption starts */
+#caption{
+font-size: x-large;
+font-family: fantasy;
+color: rgb(43, 86, 226);
+padding: 37px;
+animation-name: text-animation;
+animation-duration:  2s;
+animation-iteration-count: 10;
+}
+@keyframes text-animation {
+from{
+font-size: 14px;
+color: rgb(228, 21, 55);
+}
+to{
+font-size: 28px;
+color: rgb(41, 224, 9);
+}
+}
+/*form caption ends */

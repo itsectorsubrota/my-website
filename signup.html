@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #form{
+            background-color:rgba(10, 224, 10, 0.8);
+            color: rgb(0, 102, 128);
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 27px;
+        }
+        #text { 
+background-color: rgba(14, 50, 230, 0.6);
+color: rgb(0, 30, 128);
+font-size: x-large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 37px;
+margin: 0 auto;
+animation-name: text-animation;
+animation-duration:  1s;
+animation-iteration-count: infinite;
+        }
+@keyframes text-animation {
+    from{
+        color: rgb(228, 21, 21);
+    }
+    to{
+        color: rgb(0, 26, 255);
+    }
+}
+        #body {
+        background-image: url("picture/programing.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+         padding: 12px;
+         color:lime;
+    }
+    </style>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    
+ <!--Fontawsome  cdn Link-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page </title>
+</head>
+<body id="body">
+    <br>
+    <!--Form start -->
+<center>
+    <div class="col-sm-15 col-md-12 col-lg-10 w-50" id="text">
+        <h2> Sign Up Page </h2>
+    </div>
+    <form action="signup.php" method="post" class="was-validated w-50" id="form">
+<br>
+<i class="fas fa-users fa-3x text-info"></i>
+<br>
+        <div class="col-sm-15 col-md-12 col-lg-10">
+    <label for="First Name"> First Name : </label>
+    <input type="text" name="f_name" class="form-control" placeholder="Enter your valid first name" required/>
+<div class="invalid-feedback alert-danger">Enter your first name </div>
+<div class="valid-feedback alert-info ">It's taking </div>
+</div>
+<br>
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <label for="Last Name"> Last Name : </label>
+    <input type="text" name="l_name" class="form-control" placeholder="Enter your valid last name" required/>
+<div class="invalid-feedback alert-danger">Enter your last name </div>
+<div class="valid-feedback alert-info ">It's taking </div>
+</div>
+<br>
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <label for="User Name"> User Name : </label>
+    <input type="text" name="username"  placeholder="something" id="username" class="form-control" required/>
+<div class="invalid-feedback alert-danger">Enter your user name </div>
+<div class="valid-feedback alert-info ">It's taking </div>
+</div>
+<br>
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <label for=" Email "> Email : </label>
+    <input type="email" name="email" class="form-control" id="email" placeholder="something@gmail.com" required/> 
+<div class="invalid-feedback alert-danger">Enter your email </div>
+<div class="valid-feedback alert-info ">It's taking </div>
+</div>
+<br>
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <label for="password"> Password : </label>
+    <input type="password" id="password" name="password" min="10" max="20"class="form-control" placeholder="Enter your password" required/>
+<div class="invalid-feedback alert-danger">Enter your  password </div>
+<div class="valid-feedback alert-info ">It's taking </div>
+</div>
+<br>
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <label for="Country"> Country: </label>
+     <select name="country" class="form-control">
+         <option selected disabled> Select your country </option>
+         <option>Bangladesh</option>
+         <option>India</option>
+         <option>Pakisthan</option>
+         <option>USA</option>
+         <option>England</option>
+         <option>Island</option>
+         <option>Filland</option>
+         <option>Jarman</option>
+         <option>Australia</option>
+         <option>Singapur</option>
+         <option>France</option>
+         <option>Brazil</option>
+         <option>Srilanka</option>
+        <option>Nepal</option>
+        <option>Other</option> 
+     </select>
+</div>
+<br>
+
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <input type="submit" value="Sign Up" name="sign_up" id="signup" class="form-control w-50 btn-info"/>
+</div>
+<br>
+<div class="col-sm-15 col-md-12 col-lg-10">
+    <input type="reset" value="RESET"  class="btn p-10 btn-danger form-control w-50"/>
+</div>
+<br>
+<strong>Log in your account : </strong> <a href="login_form.html">Log in </a>
+<br>
+&nbsp;&nbsp;&nbsp;
+ <input type="checkbox"  id="checkbox" class="form-check-input" required style="height: 28px; width: 28px;"/>
+&nbsp;&nbsp;&nbsp;
+<label for="checkbox" class="form-check-label"> Agree to terms and conditions  </label>
+<br>
+&copy; copy write by subrota chandra sharker
+<br>
+    </form>
+</center>
+    <!--Form end -->
+    <br>
+    <script src="signup.js"></script>
+</body>
+</html>
